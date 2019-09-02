@@ -6,6 +6,11 @@ import axios from 'axios';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 class App extends Component {
+  state = {
+    users: [],
+    loading: false
+  };
+
   async componentDidMount() {
     const res = await axios.get('https://api.github.com/users');
     console.log(res.data);
