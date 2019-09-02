@@ -2,7 +2,7 @@
 
 /* Global Styles */
 :root {
-  --primary-color: #dc3545;
+  --primary-color: #35a0dc;
   --dark-color: #333333;
   --light-color: #f4f4f4;
   --danger-color: #dc3545;
@@ -281,6 +281,7 @@ img {
 .alert-dark {
   background: var(--dark-color);
   color: #fff;
+  border-radius: 20px;
 }
 
 .btn-danger,
@@ -310,6 +311,18 @@ img {
 
 .btn:hover {
   opacity: 0.8;
+  
+/* new code */
+  background-color: #55badf;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  
 }
 
 .bg-light,
