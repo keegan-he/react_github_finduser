@@ -5,7 +5,7 @@ class Search extends Component {
     return (
       <div>
         <form className="form">
-          <input type="test" name="text" placeholder="Search Users...." />
+          <input type="text" name="text" placeholder="Search Users...." />
           <input
             type="submit"
             value="Search"
