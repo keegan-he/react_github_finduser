@@ -50,19 +50,21 @@ class App extends Component {
     const { users, loading } = this.state;
 
     return (
-      <div className="App">
-        <Navbar />
-        <div className="container">
-          <Alert alert={this.state.alert} />
-          <Search
-            searchUsers={this.searchUsers}
-            clearUsers={this.clearUsers}
-            showClear={users.length > 0 ? true : false}
-            setAlert={this.setAlert}
-          />
-          <Users loading={loading} users={users} />
+      <Router>
+        <div className="App">
+          <Navbar />
+          <div className="container">
+            <Alert alert={this.state.alert} />
+            <Search
+              searchUsers={this.searchUsers}
+              clearUsers={this.clearUsers}
+              showClear={users.length > 0 ? true : false}
+              setAlert={this.setAlert}
+            />
+            <Users loading={loading} users={users} />
+          </div>
         </div>
-      </div>
+      </Router>
     );
   }
 }
