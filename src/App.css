@@ -313,18 +313,18 @@ img {
 
 .btn:hover {
   opacity: 0.8;
-  
-/* new code */
+
+  /* new code */
   background-color: #55badf;
   border: none;
   color: white;
-  padding: 16px 32px;
+  padding: 6px 20px;
   text-align: center;
   font-size: 16px;
   margin: 4px 2px;
   opacity: 0.6;
-  transition: 0.3s;
-  
+  transition: 0.2s;
+
 }
 
 .bg-light,
